@@ -20,7 +20,6 @@ main {
 .circle {
   width: 10em;
   height: 10em;
-  border: 1px solid white;
   border-radius: 50%;
   margin-top: 3em;
   background-color: white;
@@ -33,4 +32,16 @@ main {
 .circle p {
   color: black;
   font-size: 5em;
+}
+
+.start {
+  background-color: white;
+}
+
+.evencolor {
+  background-color: rgb(235, 233, 128);
+}
+
+.oddcolor {
+  background-color: rgb(236, 129, 129);
 }
