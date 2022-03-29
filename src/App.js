@@ -4,9 +4,11 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Main from "./Main";
 
+import classes from "./App.module.css";
+
 function App() {
   return (
-    <div className="frame">
+    <div className={classes.frame}>
       <header>
         <Header />
       </header>

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
-import Button from "./Button";
+import Button from "./UI_components/Button";
+
+import classes from "./Main.module.css";
 
 class Main extends Component {
   state = {
@@ -21,16 +23,18 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="mainContainer">
-        <div className="circle">
-          <p className="sum">{this.state.counter}</p>
-        </div>
-        <div className="buttonContainer">
-          <Button text="Add five" value="5" click={this.addValue} />
-          <Button text="Add one" value="1" click={this.addValue} />
-          <Button text="Remove" click={this.reset} />
-          <Button text="Remove one" value="-1" click={this.addValue} />
-          <Button text="Remove five" value="-5" click={this.addValue} />
+      <div className={classes.main}>
+        <div className={classes.mainContainer}>
+          <div className={classes.circle}>
+            <p className="sum">{this.state.counter}</p>
+          </div>
+          <div className={classes.buttonContainer}>
+            <Button text="Add five" value="5" click={this.addValue} />
+            <Button text="Add one" value="1" click={this.addValue} />
+            <Button text="Remove" click={this.reset} />
+            <Button text="Remove one" value="-1" click={this.addValue} />
+            <Button text="Remove five" value="-5" click={this.addValue} />
+          </div>
         </div>
       </div>
     );
