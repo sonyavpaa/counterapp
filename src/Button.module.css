@@ -1,0 +1,15 @@
+button {
+  height: 3em;
+  width: 9em;
+  margin: 1em;
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+  background-color: rgb(247, 209, 128);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  font-family: "Courier New", Courier, monospace;
+}

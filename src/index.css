@@ -67,10 +67,10 @@ main {
 
 .circle p {
   color: black;
-  font-size: 3em;
+  font-size: 5em;
 }
 
-.buttonFrame {
+button {
   height: 3em;
   width: 9em;
   margin: 1em;
@@ -78,11 +78,15 @@ main {
   border-radius: 30%;
   cursor: pointer;
   background-color: rgb(247, 209, 128);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.buttonFrame p {
+button p {
   color: rgb(0, 0, 0);
-  margin: 1em;
+  font-family: "Courier New", Courier, monospace;
 }
 
 footer {

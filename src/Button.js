@@ -1,10 +1,15 @@
 import React from "react";
-
+import classes from "./Button.module.css";
 const Button = (props) => {
   return (
-    <div className="buttonFrame">
-      <p>{props.number}</p>
-    </div>
+    <button
+      className={classes.button}
+      type={props.type || "button"}
+      value={props.value}
+      onClick={props.click}
+    >
+      {props.text}
+    </button>
   );
 };
 
